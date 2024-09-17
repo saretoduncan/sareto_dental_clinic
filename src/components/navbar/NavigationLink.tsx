@@ -14,9 +14,9 @@ const NavigationLink: React.FC<TNavLink> = ({ to, linkName }) => {
   return (
     <>
       <Link
+        className="text-white space-y-2 p-4 "
         to={to}
         onClick={() => scrollUp()}
-        className="text-white space-y-2 p-4 "
       >
         <p>{linkName}</p>
         <div className="w-full h-[2px] bg-white"></div>

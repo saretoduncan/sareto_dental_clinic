@@ -4,7 +4,7 @@ import NavigationLink from "./NavigationLink";
 const Sidebar = () => {
   return (
     <>
-      <div className="w-full relative bg-blue-900">
+      <div className="w-full relative bg-blue-900 px-2 py-4">
         <section>
           <NavigationLink
             linkName={NavLinksData.homePage.linkName}
