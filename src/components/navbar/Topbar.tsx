@@ -1,6 +1,9 @@
 import logo from "../../assets/logo.webp";
 import { FaBars } from "react-icons/fa6";
-const Topbar = () => {
+type TTopNavBar = {
+  handleSideNav: () => void;
+};
+const Topbar: React.FC<TTopNavBar> = ({ handleSideNav }) => {
   return (
     <>
       <div className="bg-blue-900  flex px-4  w-full justify-between items-center ">
@@ -18,9 +21,9 @@ const Topbar = () => {
           <button></button>
         </section>
         <section>
-          <div>
+          <button onClick={() => handleSideNav()}>
             <FaBars className="text-white text-3xl lg:hidden " />
-          </div>
+          </button>
         </section>
       </div>
     </>

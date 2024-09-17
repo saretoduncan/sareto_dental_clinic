@@ -1,3 +1,4 @@
+import NavigationBar from "./components/navbar/NavigationBar";
 import Sidebar from "./components/navbar/Sidebar";
 import Topbar from "./components/navbar/Topbar";
 
@@ -6,8 +7,7 @@ function App() {
     <>
       <div>
         <header>
-          <Topbar />
-          <Sidebar />
+          <NavigationBar />
         </header>
       </div>
     </>

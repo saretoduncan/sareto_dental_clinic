@@ -18,13 +18,13 @@ const NavigationLink: React.FC<TNavLink> = ({ to, linkName }) => {
   return (
     <>
       <Link
-        className="text-white space-y-2  "
+        className="text-white space-y-1  "
         to={to}
         onMouseEnter={() => handleMouseEnter()}
         onMouseLeave={() => handleMouseLeave()}
         onClick={() => scrollUp()}
       >
-        <p>{linkName}</p>
+        <p className="font-bold">{linkName}</p>
         <div
           className={`h-[2px] bg-white transition-all duration-700 ease-in-out ${
             isHovered || currentPathLocation === to ? "w-full" : "w-0"
