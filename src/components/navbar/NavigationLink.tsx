@@ -1,5 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import useHoverHook from "../../customHooks/useHoverHook";
+import { useContext } from "react";
+import { NavBarContext } from "../../context";
 type TNavLink = {
   to: string;
   linkName: string;
@@ -7,6 +9,7 @@ type TNavLink = {
 
 const NavigationLink: React.FC<TNavLink> = ({ to, linkName }) => {
   const { handleMouseEnter, handleMouseLeave, isHovered } = useHoverHook(false);
+  const openSideNav = useContext(NavBarContext);
   const scrollUp = () => {
     window.scrollTo({
       top: 0,
@@ -14,6 +17,10 @@ const NavigationLink: React.FC<TNavLink> = ({ to, linkName }) => {
     });
   };
   const currentPathLocation = useLocation().pathname;
+  const handleOnclick = () => {
+    openSideNav?.setIsSideNavOpen(false);
+    scrollUp();
+  };
 
   return (
     <>
@@ -22,7 +29,7 @@ const NavigationLink: React.FC<TNavLink> = ({ to, linkName }) => {
         to={to}
         onMouseEnter={() => handleMouseEnter()}
         onMouseLeave={() => handleMouseLeave()}
-        onClick={() => scrollUp()}
+        onClick={() => handleOnclick()}
       >
         <p className="font-bold lg:text-xl">{linkName}</p>
         <div

@@ -1,15 +1,16 @@
+import { useContext } from "react";
+import { NavBarContext } from "../../context";
 import { NavLinksData } from "../../data/navigationBarData";
 import SecondaryLinkButton from "../Buttons/SecondaryLinkButton";
 import NavigationLink from "./NavigationLink";
-type TSideNav = {
-  isOpen: boolean;
-};
-const Sidebar: React.FC<TSideNav> = ({ isOpen }) => {
+
+const Sidebar = () => {
+  const openSideNav = useContext(NavBarContext);
   return (
     <>
       <div
         className={`w-full relative bg-blue-900 px-2 py-4 space-y-2 transition-all duration-700  ${
-          isOpen ? "translate-x-0" : "translate-x-[-100%]"
+          openSideNav?.isSideNavOpen ? "translate-x-0" : "translate-x-[-100%]"
         }`}
       >
         <section>
@@ -37,7 +38,12 @@ const Sidebar: React.FC<TSideNav> = ({ isOpen }) => {
           />
         </section>
         <section className="">
-          <SecondaryLinkButton link={NavLinksData.contactPage.to} linkName="Book Appointment" class_name=" flex justify-center"/>
+          <SecondaryLinkButton
+            link={NavLinksData.contactPage.to}
+            linkName="Book Appointment"
+            class_name=" flex justify-center"
+            handleClick={() => openSideNav?.setIsSideNavOpen(false)}
+          />
         </section>
       </div>
     </>

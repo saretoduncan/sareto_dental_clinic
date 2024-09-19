@@ -3,10 +3,11 @@ import { FaBars } from "react-icons/fa6";
 import NavigationLink from "./NavigationLink";
 import { NavLinksData } from "../../data/navigationBarData";
 import SecondaryLinkButton from "../Buttons/SecondaryLinkButton";
-type TTopNavBar = {
-  handleSideNav: () => void;
-};
-const Topbar: React.FC<TTopNavBar> = ({ handleSideNav }) => {
+import { useContext } from "react";
+import { NavBarContext } from "../../context";
+
+const Topbar = () => {
+  const openSideNav = useContext(NavBarContext);
   return (
     <>
       <div className="bg-blue-900    w-full  ">
@@ -48,7 +49,11 @@ const Topbar: React.FC<TTopNavBar> = ({ handleSideNav }) => {
             />
           </section>
           <section className="lg:hidden">
-            <button onClick={() => handleSideNav()}>
+            <button
+              onClick={() =>
+                openSideNav?.setIsSideNavOpen(!openSideNav?.isSideNavOpen)
+              }
+            >
               <FaBars
                 className="text-white text-3xl 
              "
