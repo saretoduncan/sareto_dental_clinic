@@ -1,4 +1,5 @@
 import { NavLinksData } from "../../data/navigationBarData";
+import SecondaryLinkButton from "../Buttons/SecondaryLinkButton";
 import NavigationLink from "./NavigationLink";
 type TSideNav = {
   isOpen: boolean;
@@ -34,6 +35,9 @@ const Sidebar: React.FC<TSideNav> = ({ isOpen }) => {
             linkName={NavLinksData.contactPage.linkName}
             to={NavLinksData.contactPage.to}
           />
+        </section>
+        <section className="">
+          <SecondaryLinkButton link={NavLinksData.contactPage.to} linkName="Book Appointment" class_name=" flex justify-center"/>
         </section>
       </div>
     </>
