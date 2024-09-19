@@ -1,4 +1,5 @@
 import NavigationBar from "./components/navbar/NavigationBar";
+import Routers from "./routers";
 
 function App() {
   return (
@@ -7,6 +8,9 @@ function App() {
         <header>
           <NavigationBar />
         </header>
+        <main>
+          <Routers />
+        </main>
       </div>
     </>
   );
