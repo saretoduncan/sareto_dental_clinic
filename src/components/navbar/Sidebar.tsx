@@ -9,7 +9,7 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className={`w-full relative bg-blue-900 px-2 py-4 space-y-2 transition-all duration-700  ${
+        className={`w-full  bg-blue-900 px-2 py-4 space-y-2 transition-all duration-700 lg:hidden top-20  ${
           openSideNav?.isSideNavOpen ? "translate-x-0" : "translate-x-[-100%]"
         }`}
       >

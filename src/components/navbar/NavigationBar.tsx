@@ -7,8 +7,11 @@ const NavigationBar = () => {
     <>
       <>
         <NavContextWrapper>
-          <Topbar />
-          <Sidebar />
+          
+            <Topbar />
+        
+            <Sidebar />
+        
         </NavContextWrapper>
       </>
     </>
