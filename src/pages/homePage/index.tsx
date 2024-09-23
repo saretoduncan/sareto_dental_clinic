@@ -1,3 +1,4 @@
+import CTA from "../../components/CTA";
 import AboutFeatureSection from "./AboutFeatureSection";
 import HeroSection from "./HeroSection";
 import ServicesFeatureSection from "./ServicesFeatureSection";
@@ -13,6 +14,9 @@ const Homepage = () => {
       </section>
       <section>
         <ServicesFeatureSection />
+      </section>
+      <section>
+        <CTA />
       </section>
     </>
   );
