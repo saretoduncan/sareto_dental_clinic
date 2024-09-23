@@ -10,7 +10,7 @@ const HeroSection = () => {
           className="bg-cover bg-center bg-no-repeat h-[400px] lg:h-[500px]  3xl:h-[800px] text-white  "
           style={{ backgroundImage: "url('" + dental_checkup_bg + "')" }}
         >
-          <div className="h-full w-full bg-gradient-to-r from-blue-900 to-[rgb(0, 0, 128, 0.5)] px-4   pb-6 ">
+          <div className="h-full w-full bg-gradient-to-r from-blue-900 to-[rgb(0, 0, 128, 0.5)] px-4    ">
             <div className="h-full w-full flex flex-col justify-center space-y-6  2xl:w-[1280px] 2xl:mx-auto overflow-hidden">
               <AnimateToTop>
                 <section className="space-y-2 lg:w-[600px]">
