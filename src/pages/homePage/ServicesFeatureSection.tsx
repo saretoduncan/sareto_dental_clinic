@@ -3,19 +3,24 @@ import toothExtraction from "../../assets/dental_extraction.webp";
 import ServiceCardComponenet from "../../components/ServiceCardComponenet";
 import pediatric_img from "../../assets/pediatric_treatment.webp";
 import dental_filling_img from "../../assets/tooth_filling.webp";
+import AnimateToRight from "../../wrappers/animation/AnimateToRight";
 const ServicesFeatureSection = () => {
   return (
     <>
       <div className="w-full bg-blue-50 p-4 text-700">
         <div className="2xl:w-[1280px] 2xl:mx-auto space-y-2">
           <section className="space-y-2">
-            <h4 className="text-2xl text-blue-900 text-center font-bold">
-              Complete Dental Care and Services
-            </h4>
-            <p className="text-center">
-              Restore your smile and enhance your oral health with our complete
-              dental services in Nairobi.
-            </p>
+            <AnimateToRight>
+              <h4 className="text-2xl text-blue-900 text-center font-bold">
+                Complete Dental Care and Services
+              </h4>
+            </AnimateToRight>
+            <AnimateToRight>
+              <p className="text-center">
+                Restore your smile and enhance your oral health with our
+                complete dental services in Nairobi.
+              </p>
+            </AnimateToRight>
           </section>
           <section className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             <ServiceCardComponenet
