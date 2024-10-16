@@ -7,7 +7,7 @@ const AboutFeatureSection = () => {
   return (
     <>
       <div>
-        <div className="grid gap-2 px-4 py-4 my-6 text-gray-800 md:grid-cols-2 2xl:w-[1280px] 2xl:mx-auto items-center">
+        <div className="grid gap-2 px-4 py-4 my-6 text-gray-800 md:grid-cols-2 2xl:w-[1280px] 2xl:mx-auto items-center overflow-hidden">
           <AnimateToRight>
             <section className="space-y-4">
               <div className="">

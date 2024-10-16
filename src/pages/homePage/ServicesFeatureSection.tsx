@@ -4,6 +4,7 @@ import ServiceCardComponenet from "../../components/ServiceCardComponenet";
 import pediatric_img from "../../assets/pediatric_treatment.webp";
 import dental_filling_img from "../../assets/tooth_filling.webp";
 import AnimateToRight from "../../wrappers/animation/AnimateToRight";
+import SecondaryLinkButton from "../../components/Buttons/SecondaryLinkButton";
 const ServicesFeatureSection = () => {
   return (
     <>
@@ -48,6 +49,9 @@ const ServicesFeatureSection = () => {
               imgCaption={` Address dental issues and relieve pain with our gentle and effective tooth extraction procedure.`}
               pageLink=""
             />
+          </section>
+          <section className="grid justify-center pt-4">
+            <SecondaryLinkButton link="" linkName="Learn More" />
           </section>
         </div>
       </div>

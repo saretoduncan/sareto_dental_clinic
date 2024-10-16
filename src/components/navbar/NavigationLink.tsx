@@ -5,9 +5,10 @@ import { NavBarContext } from "../../context";
 type TNavLink = {
   to: string;
   linkName: string;
+  className?: string;
 };
 
-const NavigationLink: React.FC<TNavLink> = ({ to, linkName }) => {
+const NavigationLink: React.FC<TNavLink> = ({ to, linkName, className }) => {
   const { handleMouseEnter, handleMouseLeave, isHovered } = useHoverHook(false);
   const openSideNav = useContext(NavBarContext);
   const scrollUp = () => {
@@ -31,11 +32,11 @@ const NavigationLink: React.FC<TNavLink> = ({ to, linkName }) => {
         onMouseLeave={() => handleMouseLeave()}
         onClick={() => handleOnclick()}
       >
-        <p className="font-bold lg:text-xl">{linkName}</p>
+        <p className={`font-bold lg:text-xl ${className}`}>{linkName}</p>
         <div
           className={`h-[2px] bg-white transition-all duration-700 ease-in-out ${
             isHovered || currentPathLocation === to ? "w-full" : "w-0"
-          }`}
+          } `}
         ></div>
       </Link>
     </>
