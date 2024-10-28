@@ -19,7 +19,7 @@ const Our_Cores_Component: React.FC<TCoreComponent> = ({
               <img
                 src={imgSrc}
                 alt="patient centered icon"
-                className="w-[200px] mx-auto"
+                className="w-[150px] mx-auto"
               />
               <figcaption className="text-center font-bold text-lg">
                 {imgTitle}

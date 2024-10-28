@@ -40,7 +40,7 @@ const Mission_Core_Values = () => {
                 commitment to compassionate, personalized care.
               </p>
             </AnimateToTop>
-            <div className="grid py-4 gap-4">
+            <div className="grid py-4 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
               <Our_Cores_Component
                 imgCaption={`  We prioritize our patients' needs and comfort, ensuring
                       they feel valued and understood in every interaction.`}
@@ -62,7 +62,11 @@ const Mission_Core_Values = () => {
                 imgTitle="Compassion"
                 imgCaption={`We approach every patient with empathy and kindness, understanding the emotional aspects of dental care.`}
               />
-              <Our_Cores_Component imgSrc={education_img} imgTitle={`Education`} imgCaption={`We are dedicated to educating our patients about their oral health, empowering them to make informed decisions.`}/>
+              <Our_Cores_Component
+                imgSrc={education_img}
+                imgTitle={`Education`}
+                imgCaption={`We are dedicated to educating our patients about their oral health, empowering them to make informed decisions.`}
+              />
             </div>
           </section>
         </div>
