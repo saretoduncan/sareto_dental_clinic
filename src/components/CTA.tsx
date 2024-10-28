@@ -7,7 +7,7 @@ const CTA = () => {
     <>
       <div className="p-4 text-gray-100 text-shadow shadow-black">
         <div
-          className="w-full min-h-[200px] bg-cover bg-no-repeat bg-center relative rounded-md md:w-3/4 2xl:w-[1280px] 2xl:mx-auto"
+          className="w-full min-h-[200px] bg-cover bg-no-repeat bg-center relative rounded-md md:w-3/4 2xl:w-[1280px] md:mx-auto"
           style={{ backgroundImage: "url('" + business_smile + "')" }}
         >
           <div className="absolute top-0 w-full bottom-0 bg-gradient-to-r from-blue-900 to-transparent rounded-md flex flex-col justify-center px-4 space-y-1 ">
