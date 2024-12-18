@@ -1,6 +1,6 @@
-import Footer from "./components/footer";
-import NavigationBar from "./components/navbar/NavigationBar";
-import Routers from "./routers";
+import Footer from './components/footer';
+import NavigationBar from './components/navbar/NavigationBar';
+import Routers from './routers';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           </main>
         </section>
         <section>
-          <Footer/>
+          <Footer />
         </section>
       </div>
     </>
