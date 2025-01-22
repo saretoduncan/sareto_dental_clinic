@@ -5,15 +5,15 @@ import Routers from './routers';
 function App() {
   return (
     <>
-      <div className="flex flex-col justify-between min-h-screen">
-        <section className="">
+      <div className="flex flex-col justify-between min-h-screen w-full">
+        <section className="w-full">
           <header className="relative w-full">
             <div className="fixed w-full z-[100]">
               <NavigationBar />
             </div>
           </header>
 
-          <main className="pt-20 lg:top-[87px] bg-white">
+          <main className="pt-20 lg:top-[87px] bg-white w-full">
             <Routers />
           </main>
         </section>

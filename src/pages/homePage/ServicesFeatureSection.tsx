@@ -9,19 +9,23 @@ const ServicesFeatureSection = () => {
   return (
     <>
       <div className="w-full bg-blue-50 p-4 text-700">
-        <div className="2xl:w-[1280px] 2xl:mx-auto space-y-2">
+        <div className="xl:w-[1024px] 2xl:w-[1280px] xl:mx-auto space-y-2">
           <section className="space-y-2">
-            <AnimateToRight>
-              <h4 className="text-2xl text-blue-900 text-center font-bold">
-                Complete Dental Care and Services
-              </h4>
-            </AnimateToRight>
-            <AnimateToRight>
-              <p className="text-center">
-                Restore your smile and enhance your oral health with our
-                complete dental services in Nairobi.
-              </p>
-            </AnimateToRight>
+            <div className="overflow-x-hidden">
+              <AnimateToRight>
+                <h4 className="text-2xl text-blue-900 text-center font-bold">
+                  Complete Dental Care and Services
+                </h4>
+              </AnimateToRight>
+            </div>
+            <div>
+              <AnimateToRight>
+                <p className="text-center">
+                  Restore your smile and enhance your oral health with our
+                  complete dental services in Nairobi.
+                </p>
+              </AnimateToRight>{" "}
+            </div>
           </section>
           <section className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             <ServiceCardComponenet

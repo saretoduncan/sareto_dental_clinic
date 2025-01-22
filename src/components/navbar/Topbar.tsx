@@ -11,7 +11,7 @@ const Topbar = () => {
   return (
     <>
       <div className="bg-blue-900    w-full  ">
-        <div className="flex px-4 py-2  w-full justify-between items-center xl:w-[1280px] 2xl:mx-auto">
+        <div className="flex px-4 py-2  w-full justify-between items-center xl:w-[1280px]  xl:mx-auto">
           <section>
             <img src={logo} alt="logo" className="w-12 lg:w-14" />
           </section>

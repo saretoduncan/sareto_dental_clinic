@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <footer className="  bg-blue-900 text-gray-200 py-4  text-sm relative px-4   ">
-        <div className=" 2xl:w-[1280px] 2xl:mx-auto mt-4">
+        <div className=" xl:w-[1024px] 2xl:w-[1280px] xl:mx-auto mt-4">
           <div className="grid gap-4 lg:grid-cols-3">
             <section>
               <figure className="lg:flex lg:flex-col-reverse">
@@ -39,23 +39,23 @@ const Footer = () => {
                   <NavigationLink
                     linkName={NavLinksData.homePage.linkName}
                     to={NavLinksData.homePage.to}
-                    className="text-sm"
+                    className="text-sm md:text-base"
                   />
                   <NavigationLink
                     linkName={NavLinksData.aboutPage.linkName}
                     to={NavLinksData.aboutPage.to}
-                    className="text-sm"
+                    className="text-sm md:text-base"
                   />
 
                   <NavigationLink
                     linkName={NavLinksData.servicePage.linkName}
                     to={NavLinksData.servicePage.to}
-                    className="text-sm"
+                    className="text-sm md:text-base"
                   />
                   <NavigationLink
                     linkName={NavLinksData.contactPage.linkName}
                     to={NavLinksData.contactPage.to}
-                    className="text-sm"
+                    className="text-sm md:text-base"
                   />
                 </div>
               </section>

@@ -13,7 +13,7 @@ const HeroSection = () => {
           style={{ backgroundImage: "url('" + woman_with_dummy_teeth + "')" }}
         >
           <div className="h-full w-full bg-gradient-to-r from-blue-900 to-[rgb(0, 0, 128, 0.5)] px-4 ">
-            <div className="h-full w-full flex flex-col justify-center space-y-6  2xl:w-[1280px] 2xl:mx-auto overflow-hidden">
+            <div className="h-full w-full flex flex-col justify-center space-y-6 xl:w-[1024px] 2xl:w-[1280px] xl:mx-auto overflow-hidden">
               <AnimateToTop>
                 <section className="space-y-2 lg:w-[600px]">
                   <h1 className="text-2xl font-bold text-shadow shadow-black lg:text-6xl">
