@@ -2,3 +2,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slick-dots li button::before {
+  color: #292828;
+}
+/* Change the color of the active dot */
+.slick-dots li.slick-active button:before {
+  color: #f97316; /* Set the color for the active dot */
+}
+/* Change color of the previous arrow */
+.slick-prev:before {
+  color: #f97316; /* Set your desired color */
+}
+
+/* Change color of the next arrow */
+.slick-next:before {
+  color: #f97316; /* Set your desired color */
+}

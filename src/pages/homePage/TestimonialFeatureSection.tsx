@@ -2,10 +2,48 @@ import AnimateToTop from "../../wrappers/animation/AnimateToTop";
 import google_icon from "../../assets/google_icon.svg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Testimony_card_component from "../../components/Testimony_card_component";
+import Slider, { Settings } from "react-slick";
 const TestimonialFeatureSection = () => {
+  const sliderSettings: Settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    initialSlide: 0,
+    autoplay: true,
+    cssEase: "ease-in-out",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+    ],
+  };
   return (
-    <>
-      <div className="w-full bg-blue-50 p-4 text-700 text-gray-800">
+    
+      <div className="w-full bg-blue-50 p-4 text-700 text-gray-800 shadow-md shadow-gray-500">
         <div className="xl:w-[1024px] 2xl:w-[1280px] xl:mx-auto space-y-2">
           <section className="">
             <AnimateToTop>
@@ -35,13 +73,23 @@ const TestimonialFeatureSection = () => {
             </AnimateToTop>
           </section>
           <section>
-            <div>
-                <Testimony_card_component/>
+            <div className="p-6">
+                <Slider {...sliderSettings}>
+                   <Testimony_card_component />
+                   <Testimony_card_component />
+                   <Testimony_card_component />
+                   <Testimony_card_component />
+                   <Testimony_card_component />
+                   <Testimony_card_component />
+                   <Testimony_card_component />
+                   <Testimony_card_component />
+                </Slider>
+             
             </div>
           </section>
         </div>
       </div>
-    </>
+    
   );
 };
 

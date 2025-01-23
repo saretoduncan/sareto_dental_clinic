@@ -30,7 +30,7 @@ const Testimony_card_component = () => {
               <p>4 days ago</p>
             </div>
           </div>
-          <div className="grid">
+          <div className="grid gap-2">
             <div className="flex space-x-1">
               {Array(5)
                 .fill(null)
@@ -44,7 +44,7 @@ const Testimony_card_component = () => {
               <p
                 className="line-clamp-3"
                 ref={paragraphRef}
-              >{`Hi am well, happy, strong, confident, and my smile is back .... reason I'd because when I was recommended to Sareto Dental Clinic by a friend who went through some procedure.... I rested and my life of painful procedures from different dentists.\n1. No pains\n2. Healing process is amaizing\n3. Customer service is on another level\n4. Affordable charges\n5. Cleanliness\n6. Follow up is wonderful\n\nI recommend anyone who have given up on dentists out there`}</p>{" "} <span className="text-blue-800">Read More</span>
+              >{`Hi am well, happy, strong, confident, and my smile is back .... reason I'd because when I was recommended to Sareto Dental Clinic by a friend who went through some procedure.... I rested and my life of painful procedures from different dentists.\n1. No pains\n2. Healing process is amaizing\n3. Customer service is on another level\n4. Affordable charges\n5. Cleanliness\n6. Follow up is wonderful\n\nI recommend anyone who have given up on dentists out there`}</p>{" "} <span className="text-blue-800 underline">Read More</span>
             </div>
           </div>
         </div>
