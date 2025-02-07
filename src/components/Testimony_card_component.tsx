@@ -48,7 +48,7 @@ const Testimony_card_component = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </>
   );
 };
