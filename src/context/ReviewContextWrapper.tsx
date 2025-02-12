@@ -1,5 +1,4 @@
-import { ReactNode, useState } from "react";
-import { TReview } from "../types/apiTypes";
+import { ReactNode } from "react";
 import { ReviewApiContext } from ".";
 import { useQuery } from "@tanstack/react-query";
 import { getReviews } from "../data/apiFunction";
