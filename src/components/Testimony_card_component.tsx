@@ -1,7 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { FaStar } from "react-icons/fa";
+import { TReview } from "../types/apiTypes";
 
-const Testimony_card_component = () => {
+
+const Testimony_card_component:React.FC<TReview> = ({author_name, profile_photo_url, 
+relative_time_description, text,rating
+}) => {
   const paragraphRef = useRef<HTMLParagraphElement>(null);
   const [lineCount, setLineCount] = useState(0);
   useEffect(() => {
@@ -18,21 +22,21 @@ const Testimony_card_component = () => {
   return (
     <>
       <div>
-        <div className="grid gap-2 rounded shadow-gray-300 bg-white p-4 text-sm">
+        <div className="grid gap-2 rounded shadow-gray-300 bg-white p-4 text-sm m-2">
           <div className="flex space-x-2">
             <img
-              src="https://lh3.googleusercontent.com/a-/ALV-UjVScKJ85Ib8Q4ZrOTxoVmk0HC-FD1QG-9NnD1iU1xsxBaWMEjE_Ow=s128-c0x00000000-cc-rp-mo"
+              src={profile_photo_url}
               alt=""
               className="w-16"
             />
             <div className="self-center">
-              <p className="">Bishop Githuku</p>
-              <p>4 days ago</p>
+              <p className="">{author_name}</p>
+              <p>{relative_time_description}</p>
             </div>
           </div>
           <div className="grid gap-2">
             <div className="flex space-x-1">
-              {Array(5)
+              {Array(rating)
                 .fill(null)
                 .map((_, index) => (
                   <div key={index}>
@@ -44,11 +48,12 @@ const Testimony_card_component = () => {
               <p
                 className="line-clamp-3"
                 ref={paragraphRef}
-              >{`Hi am well, happy, strong, confident, and my smile is back .... reason I'd because when I was recommended to Sareto Dental Clinic by a friend who went through some procedure.... I rested and my life of painful procedures from different dentists.\n1. No pains\n2. Healing process is amaizing\n3. Customer service is on another level\n4. Affordable charges\n5. Cleanliness\n6. Follow up is wonderful\n\nI recommend anyone who have given up on dentists out there`}</p>{" "} <span className="text-blue-800 underline">Read More</span>
+              >{text}</p>{" "}
+              <span className="text-blue-800 underline">Read More</span>
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </>
   );
 };

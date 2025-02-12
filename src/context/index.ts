@@ -6,9 +6,10 @@ type TNavContextType = {
   setIsSideNavOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 type TReviewApiContextType = {
-  data: TReview | null;
+  data: TReview[] | undefined;
   loading: boolean;
   error: any | null;
+  
 };
 export const NavBarContext = createContext<TNavContextType | undefined>(
   undefined
